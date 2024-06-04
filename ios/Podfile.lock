@@ -1,29 +1,29 @@
 PODS:
+  - daily_pedometer2 (0.0.1):
+    - Flutter
   - Flutter (1.0.0)
   - path_provider_foundation (0.0.1):
     - Flutter
     - FlutterMacOS
-  - pedometer (0.0.1):
-    - Flutter
 
 DEPENDENCIES:
+  - daily_pedometer2 (from `.symlinks/plugins/daily_pedometer2/ios`)
   - Flutter (from `Flutter`)
   - path_provider_foundation (from `.symlinks/plugins/path_provider_foundation/darwin`)
-  - pedometer (from `.symlinks/plugins/pedometer/ios`)
 
 EXTERNAL SOURCES:
+  daily_pedometer2:
+    :path: ".symlinks/plugins/daily_pedometer2/ios"
   Flutter:
     :path: Flutter
   path_provider_foundation:
     :path: ".symlinks/plugins/path_provider_foundation/darwin"
-  pedometer:
-    :path: ".symlinks/plugins/pedometer/ios"
 
 SPEC CHECKSUMS:
+  daily_pedometer2: eedd020db157c7378e20834f7e91788c03f491b0
   Flutter: e0871f40cf51350855a761d2e70bf5af5b9b5de7
   path_provider_foundation: 2b6b4c569c0fb62ec74538f866245ac84301af46
-  pedometer: 381969883680ade42559782cc41a3bbd453d8234
 
-PODFILE CHECKSUM: 819463e6a0290f5a72f145ba7cde16e8b6ef0796
+PODFILE CHECKSUM: 7be2f5f74864d463a8ad433546ed1de7e0f29aef
 
 COCOAPODS: 1.15.2
