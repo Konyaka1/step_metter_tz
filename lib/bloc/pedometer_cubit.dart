@@ -14,7 +14,7 @@ final _defaultState = PedometerState(
   lastUpdatedDate: DateTime.now(),
 );
 
-class PedometerCubit extends Cubit<PedometerState> {
+class PedometerCubit extends HydratedCubit<PedometerState> {
   late StreamSubscription<DailySteps> _streamSubscription;
   final PedometerService _service;
 
@@ -61,15 +61,13 @@ class PedometerCubit extends Cubit<PedometerState> {
     return super.close();
   }
 
-  // @override
-  // PedomentrState fromJson(Map<String, dynamic> json) {
-  //   // TODO: implement fromJson
-  //   throw UnimplementedError();
-  // }
+  @override
+  PedometerState fromJson(Map<String, dynamic> json) {
+    return PedometerState.fromJson(json);
+  }
 
-  // @override
-  // Map<String, dynamic>? toJson(PedomentrState state) {
-  //   // TODO: implement toJson
-  //   throw UnimplementedError();
-  // }
+  @override
+  Map<String, dynamic>? toJson(PedometerState state) {
+    return state.toJson();
+  }
 }

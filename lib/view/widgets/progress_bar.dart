@@ -15,6 +15,7 @@ class ProgressBar extends StatelessWidget {
     return CircularPercentIndicator(
       radius: 35,
       percent: percent,
+      progressColor: Colors.blue,
       center: Text('$formattedValue %'),
     );
   }

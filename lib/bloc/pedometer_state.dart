@@ -1,3 +1,8 @@
+import 'package:json_annotation/json_annotation.dart';
+
+part 'pedometer_state.g.dart';
+
+@JsonSerializable()
 class PedometerState {
   final bool isEnabled;
   final int steps;
@@ -54,4 +59,9 @@ class PedometerState {
       error: error,
     );
   }
+
+  factory PedometerState.fromJson(Map<String, dynamic> json) =>
+      _$PedometerStateFromJson(json);
+
+  Map<String, dynamic> toJson() => _$PedometerStateToJson(this);
 }
